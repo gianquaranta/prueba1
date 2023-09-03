@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de Cursos</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contacto">
+        <h1>Contacto</h1>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="motivo">Motivo de Contacto:</label>
+            <select id="motivo" name="motivo" required>
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="queja">Queja</option>
+            </select>
+    
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section id="quienes-somos">
+        <h1>Quiénes Somos</h1>
+        <p>Somos una plataforma líder en educación en línea especializada en la enseñanza de idiomas. Nuestra misión es brindar a nuestros estudiantes las herramientas necesarias para dominar un nuevo idioma de manera eficiente y divertida.</p>
+    
+        <p>Ofrecemos una amplia gama de cursos diseñados por expertos en lingüística y pedagogía, lo que garantiza que nuestros estudiantes obtengan la mejor experiencia de aprendizaje posible. Nuestro enfoque se centra en la comunicación práctica y el desarrollo de habilidades lingüísticas sólidas.</p>
+    
+        <p>Nuestros instructores altamente calificados y apasionados están comprometidos con el éxito de nuestros estudiantes. Utilizamos tecnología de vanguardia y recursos multimedia para crear un ambiente de aprendizaje enriquecedor y efectivo.</p>
+    
+        <p>En nuestra plataforma, puedes encontrar cursos en varios idiomas, incluyendo inglés, francés, español, alemán, y muchos más. Ya sea que estés buscando mejorar tus habilidades para viajar, trabajar o simplemente por diversión, tenemos el curso perfecto para ti.</p>
+    
+        <p>Únete a nuestra comunidad global de estudiantes y comienza tu viaje hacia la fluidez en un nuevo idioma hoy mismo. Estamos comprometidos con tu éxito y te apoyaremos en cada paso del camino.</p>
+    </section>
+
+    <section id="catalogo">
+        <h1>Catálogo de Cursos</h1>
+        <div class="categorias">
+            <input type="radio" id="ingles" name="categoria" class="categoria-ingles">
+            <label for="ingles">Inglés</label>
+            <input type="radio" id="frances" name="categoria" class="categoria-frances">
+            <label for="frances">Francés</label>
+        </div>
+    
+        <div id="cursos">
+            <!-- Agrega aquí los cursos -->
+            <div class="curso" data-categoria="ingles">
+                <h2>Inglés Principiante</h2>
+                <p>Curso de inglés para principiantes</p>
+
+            </div>
+            <div class="curso" data-categoria="ingles">
+                <h2>Inglés Intermedio</h2>
+                <p>Curso de inglés intermedio</p>
+                <a href="programas/ingles_intermedio.pdf" download>Descargar PDF</a>
+            </div>
+            <div class="curso" data-categoria="ingles">
+                <h2>Inglés Avanzado</h2>
+                <p>Curso de inglés avanzado</p>
+                <a href="programas/ingles_avanzado.pdf" download>Descargar PDF</a>
+            </div>
+            <div class="curso" data-categoria="frances">
+                <h2>Francés Principiante</h2>
+                <p>Curso de francés para principiantes</p>
+                <a href="programas/frances_principiante.pdf" download>Descargar PDF</a>
+            </div>
+            <div class="curso" data-categoria="frances">
+                <h2>Francés Intermedio</h2>
+                <p>Curso de francés intermedio</p>
+                <a href="programas/frances_intermedio.pdf" download>Descargar PDF</a>
+            </div>
+            <div class="curso" data-categoria="frances">
+                <h2>Francés Avanzado</h2>
+                <p>Curso de francés avanzado</p>
+                <a href="programas/frances_avanzado.pdf" download>Descargar PDF</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

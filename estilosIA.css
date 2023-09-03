@@ -1,0 +1,94 @@
+/* estilosIA.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para el catálogo de cursos */
+.categorias {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #555;
+}
+
+.cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.curso {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    display: none;
+}
+
+.categoria-ingles .curso[data-categoria="ingles"],
+.categoria-frances .curso[data-categoria="frances"] {
+    display: block;
+}
+
+a {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
